@@ -55,7 +55,7 @@ Recommendation: [What the patient should do next]
     }));
 
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      // API (we used gemini API)
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
